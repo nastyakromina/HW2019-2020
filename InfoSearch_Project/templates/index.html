@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)file:///C:/Bootstrap/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/sait-7.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Мой поисковик</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- строка 1 -->
+<div class="row">
+	<div class="col-lg-6 col-sm-8">
+		<h1>Поисковик!</h1>
+		<p>Введите свой запрос в поле ниже и выберите модель, по которой Вам хотелось бы осуществить поиск.</p>
+	</div>
+</div>
+<div align = center>
+	<form method='GET' action="/results">
+		<p>Введите запрос
+		<input type='text' size=30 maxlength=100 name='q' value=''><br><br></p>
+		<select name = 'model'>
+			<option>Tf-IDF</option>
+			<option>BM25</option>
+			<option>FastText</option>
+		</select>
+        <input type='submit' value='Посмотреть результат'>
+    </form>
+</div>
+<div class="row">     
+	<p> ©  Кромина Анастасия,  2019 | Все права защищены.</p>
+</div>
+</body>
+</html>
